@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HDI Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="prediction-box">
+
+    <h1>Human Development Index</h1>
+
+    <form action="/predict" method="POST">
+
+        <input type="number" step="any" name="HDI Rank" placeholder="Enter HDI Rank" required>
+
+        <input type="number" step="any" name="Country" placeholder="Country Encoded Number" required>
+
+        <input type="number" step="any" name="Human Development Index (HDI)" placeholder="HDI Value" required>
+
+        <input type="number" step="any" name="Life expectancy at birth" placeholder="Life Expectancy" required>
+
+        <input type="number" step="any" name="Expected years of schooling" placeholder="Expected Years of Schooling" required>
+
+        <input type="number" step="any" name="Mean years of schooling" placeholder="Mean Years of Schooling" required>
+
+        <input type="number" step="any" name="Gross national income (GNI) per capita" placeholder="GNI Per Capita" required>
+
+        <input type="number" step="any" name="GNI per capita rank minus HDI rank" placeholder="GNI Rank Minus HDI Rank" required>
+
+        <input type="number" step="any" name="HDI rank.1" placeholder="HDI Rank.1" required>
+
+        <input type="submit" value="Predict" class="btn">
+
+</form>
+
+</div>
+
+</body>
+</html>

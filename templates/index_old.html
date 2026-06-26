@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HDI Prediction</title>
+</head>
+<body>
+
+<h2>Human Development Index Prediction</h2>
+
+<form action="/predict" method="POST">
+
+    <label>HDI Rank</label><br>
+    <input type="number" name="hdi_rank" required><br><br>
+
+    <label>Country (Encoded Number)</label><br>
+    <input type="number" name="country" required><br><br>
+
+    <label>Human Development Index (HDI)</label><br>
+    <input type="number" step="any" name="hdi" required><br><br>
+
+    <label>Life Expectancy at Birth</label><br>
+    <input type="number" step="any" name="life" required><br><br>
+
+    <label>Expected Years of Schooling</label><br>
+    <input type="number" step="any" name="expected" required><br><br>
+
+    <label>Mean Years of Schooling</label><br>
+    <input type="number" step="any" name="mean" required><br><br>
+
+    <label>Gross National Income (GNI) per Capita</label><br>
+    <input type="number" step="any" name="gni" required><br><br>
+
+    <label>GNI per Capita Rank Minus HDI Rank</label><br>
+    <input type="number" step="any" name="gni_rank" required><br><br>
+
+    <label>HDI Rank.1</label><br>
+    <input type="number" step="any" name="rank1" required><br><br>
+
+    <input type="submit" value="Predict">
+
+</form>
+
+</body>
+</html>
